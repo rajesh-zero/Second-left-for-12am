@@ -15,7 +15,7 @@ function Display() {
         var seconds = hradd + min + sec;
         const a = 86400 - seconds;
         let prin = document.getElementById('demo');
-        prin.innerHTML = `${a}`;
+        prin.innerHTML = a;
     }, 1000);
 
 }
