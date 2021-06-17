@@ -15,7 +15,7 @@ function Display() {
         var seconds = hradd + min + sec;
         const a = 86400 - seconds;
         let prin = document.getElementById('demo');
-        prin.innerHTML = `Total numbers of seconds left for 12am is ${a}`;
+        prin.innerHTML = `${a}`;
     }, 1000);
 
 }
