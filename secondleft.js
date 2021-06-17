@@ -1,4 +1,4 @@
-console.log("hi there");
+console.log("hi there2");
 
 // function dS(){
 //     console.log(86400 - seconds)
