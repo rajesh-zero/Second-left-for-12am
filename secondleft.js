@@ -1,4 +1,19 @@
 var totalSeconds = 86400;
+
+//detect system theme
+function detectTheme() {
+    var theme = "";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        theme = "dark";
+    } else {
+        theme = "light";
+    }
+    return theme;
+}
+
+console.log(detectTheme());
+
+
 function Display() {
 
 
@@ -18,6 +33,7 @@ function Display() {
 }
 
 Display();
+
 
 
 function getColor(seconds) {
