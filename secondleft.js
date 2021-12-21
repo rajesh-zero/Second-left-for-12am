@@ -23,7 +23,7 @@ function Display() {
         var min = dts.getMinutes();
         var sec = dts.getSeconds();
         var hradd = hr * 3600;
-        var seconds = hradd + min + sec;
+        var seconds = ((60-sec) + ((60-1-min)*60) + (24-1-hr)*3600));
         const a = totalSeconds - seconds;
         let prin = document.getElementById('demo');
         prin.innerHTML = a;
@@ -48,12 +48,6 @@ function getColor(seconds) {
         return 'green';
     } else if (seconds < 18000) {
         return 'blue';
-    } else if (seconds < 21600) {
-        return 'indigo';
-    } else if (seconds < 25200) {
-        return 'violet';
-    } else if (seconds < 54000) {
-        return 'gold';
     } else {
         return 'red';
     }
