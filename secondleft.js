@@ -26,7 +26,7 @@ function Display() {
         const a = totalSeconds-elapsedsec;
         let prin = document.getElementById('demo');
         prin.innerHTML = a;
-        console.log(dts + " " + a);
+        //console.log(dts + " " + a);
         prin.style.color = getColor(a);
     }, 1000);
 
