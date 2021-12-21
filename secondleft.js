@@ -15,8 +15,6 @@ console.log(detectTheme());
 
 
 function Display() {
-
-
     setInterval(() => {
         var dts = new Date();
         var h = dts.getHours();
@@ -28,9 +26,17 @@ function Display() {
         prin.innerHTML = a;
         //console.log(dts + " " + a);
         prin.style.color = getColor(a);
-    }, 1000);
 
+        var elem = document.getElementById("myBar");
+        elem.style.width = calculatePercentage(elapsedsec,totalSeconds);
+        elem.style.backgroundColor = getColor(a);
+    }, 1000);
 }
+
+function calculatePercentage(number, totalNumber) {
+    return (number / totalNumber) * 100 + '%';
+}
+
 
 Display();
 
