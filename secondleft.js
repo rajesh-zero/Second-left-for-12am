@@ -27,6 +27,7 @@ function Display() {
         const a = totalSeconds - seconds;
         let prin = document.getElementById('demo');
         prin.innerHTML = a;
+        console.log(a);
         prin.style.color = getColor(seconds);
     }, 1000);
 
@@ -51,20 +52,6 @@ function getColor(seconds) {
         return 'indigo';
     } else if (seconds < 25200) {
         return 'violet';
-    } else if (seconds < 28800) {
-        return 'purple';
-    } else if (seconds < 32400) {
-        return 'pink';
-    } else if (seconds < 36000) {
-        return 'brown';
-    } else if (seconds < 39600) {
-        return 'black';
-    } else if (seconds < 43200) {
-        return 'white';
-    } else if (seconds < 46800) {
-        return 'gray';
-    } else if (seconds < 50400) {
-        return 'silver';
     } else if (seconds < 54000) {
         return 'gold';
     } else {
