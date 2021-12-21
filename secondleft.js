@@ -23,7 +23,7 @@ function Display() {
         var min = dts.getMinutes();
         var sec = dts.getSeconds();
         var hradd = hr * 3600;
-        var seconds = ((60-sec) + ((60-1-min)*60) + (24-1-hr)*3600)));
+        var seconds = ((60-sec) + ((60-1-min)*60) + (24-1-hr)*3600);
         const a = totalSeconds - seconds;
         let prin = document.getElementById('demo');
         prin.innerHTML = a;
