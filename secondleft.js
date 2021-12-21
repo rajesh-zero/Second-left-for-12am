@@ -49,8 +49,6 @@ function getColor(seconds) {
         return 'orange';
     } else if (seconds < 10800) {
         return 'yellow';
-    } else if (seconds < 14400) {
-        return 'green';
     } else if (seconds < 18000) {
         return 'blue';
     } else {
