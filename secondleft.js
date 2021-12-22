@@ -28,7 +28,7 @@ function Display() {
         prin.style.color = getColor(a);
 
         var elem = document.getElementById("myBar");
-        elem.style.width = calculatePercentage(elapsedsec,totalSeconds);
+        elem.style.width = calculatePercentage(elapsedsec,totalSeconds-21600);
         elem.style.backgroundColor = getColor(a);
     }, 1000);
 }
