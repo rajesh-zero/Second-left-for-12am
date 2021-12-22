@@ -52,6 +52,6 @@ function getColor(seconds) {
     } else if (seconds < 18000) {
         return 'blue';
     } else {
-        return 'red';
+        return 'blue';
     }
 }
